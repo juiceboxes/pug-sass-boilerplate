@@ -1,4 +1,4 @@
-# Juiceboxes/juice-grid
+# Juiceboxes/pug-sass-boilerplate
 
 Boilerplate for web development with Pug and Sass. 
 
