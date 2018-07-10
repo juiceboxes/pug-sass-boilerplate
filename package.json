@@ -1,6 +1,6 @@
 {
   "name": "@juiceboxes/pug-sass-boilerplate",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": false,
   "description": "Boilerplate for pug and sass web development",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "build": "npm-run-all build:*",
     "build:sass": "node-sass src/sass/base.scss -o dist/",
     "build:pug": "pug src/pug/index.pug -o dist/",
+    "build:ugly": "npm run build:sass && uglifycss dist/base.css > dist/base.min.css",
     "watch": "npm-run-all --parallel watch:*",
     "watch:sass": "npm run build:sass -- -w",
     "watch:pug": "npm run build:pug -- -w"
@@ -34,6 +35,7 @@
     "node-sass": "^4.9.1",
     "npm-run-all": "^4.1.3",
     "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "uglifycss": "0.0.29"
   }
 }
